@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* MarketMind Design System — Purple gradient AI marketing theme */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap');
+
+@layer base {
+  :root {
+    --background: 270 60% 10%;
+    --foreground: 0 0% 100%;
+
+    --card: 270 40% 20%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 270 40% 18%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 270 70% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 270 30% 30%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 270 25% 25%;
+    --muted-foreground: 270 20% 75%;
+
+    --accent: 280 80% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 270 30% 35%;
+    --input: 270 30% 35%;
+    --ring: 270 70% 55%;
+
+    --radius: 0.75rem;
+
+    /* Brand tokens */
+    --brand-purple: 265 70% 52%;
+    --brand-violet: 280 80% 60%;
+    --brand-light: 270 60% 75%;
+    --brand-card-bg: 270 40% 22%;
+    --brand-card-border: 270 35% 38%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(260 70% 30%), hsl(280 70% 45%), hsl(300 60% 50%));
+    --gradient-page: linear-gradient(160deg, hsl(260 65% 20%), hsl(275 60% 35%), hsl(290 55% 40%));
+    --gradient-card: linear-gradient(135deg, hsl(265 45% 25% / 0.8), hsl(280 40% 30% / 0.8));
+    --gradient-btn: linear-gradient(135deg, hsl(265 70% 52%), hsl(285 75% 58%));
+
+    --sidebar-background: 270 60% 12%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 270 70% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 270 40% 22%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 270 30% 25%;
+    --sidebar-ring: 270 70% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    background: var(--gradient-page);
+    min-height: 100vh;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Sora', sans-serif;
+  }
+}
+
+@layer components {
+  .page-bg {
+    background: var(--gradient-page);
+    min-height: 100vh;
+  }
+
+  .hero-bg {
+    background: var(--gradient-hero);
+  }
+
+  .glass-card {
+    background: hsl(var(--brand-card-bg) / 0.6);
+    border: 1px solid hsl(var(--brand-card-border) / 0.5);
+    backdrop-filter: blur(12px);
+    border-radius: var(--radius);
+  }
+
+  .form-card {
+    background: hsl(0 0% 97%);
+    border-radius: calc(var(--radius) * 1.5);
+  }
+
+  .platform-chip {
+    background: hsl(var(--brand-card-bg) / 0.5);
+    border: 1px solid hsl(var(--brand-card-border) / 0.4);
+    border-radius: calc(var(--radius) * 1.5);
+    backdrop-filter: blur(8px);
+    transition: all 0.2s ease;
+  }
+
+  .platform-chip:hover {
+    background: hsl(var(--brand-card-bg) / 0.9);
+    border-color: hsl(var(--brand-light) / 0.5);
+    transform: translateY(-2px);
+  }
+
+  .nav-link {
+    color: hsl(0 0% 90%);
+    transition: color 0.2s ease;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    color: hsl(0 0% 100%);
+  }
+
+  .result-box {
+    background: hsl(0 0% 100%);
+    border: 1px solid hsl(270 30% 85%);
+    border-radius: var(--radius);
+    color: hsl(270 30% 20%);
+  }
+}
