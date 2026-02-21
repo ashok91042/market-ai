@@ -1,4 +1,5 @@
 MarketMind: Generative AI–Powered Sales & Marketing Intelligence Platform
+
 🎯 Problem Statement
 Intelligent Campaign & Sales Insight Generation for Modern Businesses
 🚧 The Challenge
