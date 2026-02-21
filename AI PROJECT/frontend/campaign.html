@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Campaign Generator - MarketAI Suite</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">
+    <i class="fa-solid fa-chart-line"></i>
+    <span>MarketAI Suite</span>
+  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="campaign.html" class="active">Campaign</a></li>
+    <li><a href="pitch.html">Pitch</a></li>
+    <li><a href="scoring.html">Lead Score</a></li>
+  </ul>
+</nav>
+
+<!-- CAMPAIGN SECTION -->
+<section class="tools-section">
+  <h2>📧 Campaign Generator</h2>
+  <p class="section-description">Create data-driven marketing campaigns tailored to your audience with AI insights.</p>
+  
+  <div class="tool-container single-column">
+    <div class="tool-input">
+      <h3>Campaign Details</h3>
+      <div class="campaign-form">
+        <label>Product Name</label>
+        <input type="text" id="campaignProduct" placeholder="e.g., SuperShoe 2.0">
+
+        <label>Target Audience</label>
+        <input type="text" id="campaignAudience" placeholder="e.g., Active runners, age 25-40">
+
+        <label>Marketing Platform</label>
+        <select id="campaignPlatform">
+          <option value="LinkedIn">LinkedIn</option>
+          <option value="Facebook">Facebook</option>
+          <option value="Instagram">Instagram</option>
+          <option value="Twitter">Twitter/X</option>
+          <option value="YouTube">YouTube</option>
+          <option value="Email">Email</option>
+          <option value="TikTok">TikTok</option>
+          <option value="WhatsApp">WhatsApp</option>
+        </select>
+
+        <button onclick="runCampaign()" class="btn">Generate Campaign</button>
+      </div>
+    </div>
+    <div class="tool-output">
+      <div id="campaignOutput" class="chart-container">
+        <div id="campaignText" class="output-text"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATUS MESSAGE -->
+<div id="statusMessage" class="status-message"></div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 MarketAI Suite | Built with 🤖 AI Intelligence</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

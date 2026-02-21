@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lead Scoring - MarketAI Suite</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">
+    <i class="fa-solid fa-chart-line"></i>
+    <span>MarketAI Suite</span>
+  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="campaign.html">Campaign</a></li>
+    <li><a href="pitch.html">Pitch</a></li>
+    <li><a href="scoring.html" class="active">Lead Score</a></li>
+  </ul>
+</nav>
+
+<!-- LEAD SCORING SECTION -->
+<section class="tools-section">
+  <h2>⭐ Lead Scoring</h2>
+  <p class="section-description">Identify and prioritize high-value leads using intelligent AI scoring based on company size and decision-maker roles.</p>
+  
+  <div class="tool-container">
+    <div class="tool-input">
+      <h3>Add Leads</h3>
+      <div id="leadScoreForm" class="leads-form">
+        <div class="lead-input">
+          <input type="text" placeholder="Lead Name" class="lead-name">
+          <input type="text" placeholder="Company" class="lead-company">
+          <input type="text" placeholder="Job Title" class="lead-title">
+          <input type="email" placeholder="Email" class="lead-email">
+          <input type="number" placeholder="Annual Revenue ($)" class="lead-revenue">
+          <button onclick="addLeadToScore()" class="btn-small">+ Add Lead</button>
+        </div>
+      </div>
+      <div id="leadScoreDisplay" class="leads-display"></div>
+      <button onclick="runLeadScore()" class="btn">Score Leads</button>
+    </div>
+    <div class="tool-output">
+      <div id="leadScoreOutput" class="chart-container">
+        <canvas id="scoreChart"></canvas>
+        <div id="scoreText" class="output-text"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATUS MESSAGE -->
+<div id="statusMessage" class="status-message"></div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 MarketAI Suite | Built with 🤖 AI Intelligence</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

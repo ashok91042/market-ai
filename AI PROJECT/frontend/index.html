@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MarketAI Suite</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">
+    <i class="fa-solid fa-chart-line"></i>
+    <span>CYBER WARRIORS</span>
+  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="campaign.html">Campaign</a></li>
+    <li><a href="pitch.html">Pitch</a></li>
+    <li><a href="scoring.html">Lead Score</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <h1>AI-Powered Marketing Suite</h1>
+  <p>
+    Generate high-performing campaigns, craft compelling pitches,
+    and qualify leads with advanced AI technology.
+  </p>
+  <button class="btn" onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">Explore Features</button>
+</section>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+  <h2>Our Tools</h2>
+  <div class="cards-grid">
+    <div class="card">
+      <i class="fa-solid fa-rocket"></i>
+      <h3>Campaign Generator</h3>
+      <p>Create data-driven marketing campaigns tailored to your audience with AI insights.</p>
+      <a href="campaign.html" class="btn-secondary">Get Started</a>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-microphone"></i>
+      <h3>Sales Pitch Creator</h3>
+      <p>Craft personalized sales pitches that convert by analyzing lead profiles.</p>
+      <a href="pitch.html" class="btn-secondary">Get Started</a>
+    </div>
+
+    <div class="card">
+      <i class="fa-solid fa-star"></i>
+      <h3>Lead Qualifier</h3>
+      <p>Identify and prioritize high-value leads using intelligent AI scoring.</p>
+      <a href="scoring.html" class="btn-secondary">Get Started</a>
+    </div>
+  </div>
+</section>
+
+<!-- PLATFORMS -->
+<section class="platforms">
+  <h2>Supported Platforms</h2>
+
+  <div class="platform-grid">
+    <div class="platform"><i class="fab fa-linkedin"></i>LinkedIn</div>
+    <div class="platform"><i class="fab fa-facebook"></i>Facebook</div>
+    <div class="platform"><i class="fab fa-instagram"></i>Instagram</div>
+    <div class="platform"><i class="fab fa-x-twitter"></i>Twitter/X</div>
+    <div class="platform"><i class="fab fa-youtube"></i>YouTube</div>
+    <div class="platform"><i class="fa-solid fa-envelope"></i>Email</div>
+    <div class="platform"><i class="fab fa-tiktok"></i>TikTok</div>
+    <div class="platform"><i class="fab fa-whatsapp"></i>WhatsApp</div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-it-works">
+  <h2>How It Works</h2>
+  <div class="steps-grid">
+    <div class="step">
+      <div class="step-number">1</div>
+      <h3>Add Leads</h3>
+      <p>Enter your lead information manually or import from your CRM.</p>
+    </div>
+    <div class="step">
+      <div class="step-number">2</div>
+      <h3>Choose Tool</h3>
+      <p>Select between campaign generation, pitch creation, or lead scoring.</p>
+    </div>
+    <div class="step">
+      <div class="step-number">3</div>
+      <h3>Generate Results</h3>
+      <p>Get AI-powered insights and recommendations in seconds.</p>
+    </div>
+    <div class="step">
+      <div class="step-number">4</div>
+      <h3>Take Action</h3>
+      <p>Use the insights to improve your marketing and sales performance.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits">
+  <h2>Why Choose MarketAI Suite?</h2>
+  <div class="benefits-grid">
+    <div class="benefit-item">
+      <i class="fa-solid fa-bolt"></i>
+      <h3>Lightning Fast</h3>
+      <p>Get results in seconds, not hours. Instant AI-powered insights for your campaigns.</p>
+    </div>
+    <div class="benefit-item">
+      <i class="fa-solid fa-brain"></i>
+      <h3>AI-Powered</h3>
+      <p>Leverage advanced AI algorithms to optimize your marketing strategy.</p>
+    </div>
+    <div class="benefit-item">
+      <i class="fa-solid fa-lock"></i>
+      <h3>Secure & Private</h3>
+      <p>Your data is encrypted and protected with enterprise-grade security.</p>
+    </div>
+    <div class="benefit-item">
+      <i class="fa-solid fa-chart-line"></i>
+      <h3>Data-Driven</h3>
+      <p>Make decisions backed by real data and intelligent analysis.</p>
+    </div>
+  </div>
+</section>
+
+<!-- STATUS MESSAGE -->
+<div id="statusMessage" class="status-message"></div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 cyber warriors </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
